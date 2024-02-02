@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Produk</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .header-img {
+            width: 100%; /* Lebar 100% agar gambar mengisi seluruh lebar layar */
+            height: auto; /* Menjaga rasio aspek gambar */
+        }
+
+        .gallery {
+            display: flex;
+            flex-direction: row; /* Susun gambar secara horizontal */
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery figure {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .gallery figcaption {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <img class="header-img" src="gambar_besar.jpg" alt="Gambar Besar"> <!-- Ganti dengan URL atau path file gambar besar -->
+
+    <div class="gallery">
+        <figure>
+            <img src="gambar_produk1.jpg" alt="Produk 1">
+            <figcaption>Deskripsi Produk 1</figcaption>
+        </figure>
+        <figure>
+            <img src="gambar_produk2.jpg" alt="Produk 2">
+            <figcaption>Deskripsi Produk 2</figcaption>
+        </figure>
+        <figure>
+            <img src="gambar_produk3.jpg" alt="Produk 3">
+            <figcaption>Deskripsi Produk 3</figcaption>
+        </figure>
+        <figure>
+            <img src="gambar_produk4.jpg" alt="Produk 4">
+            <figcaption>Deskripsi Produk 4</figcaption>
+        </figure>
+        <!-- Tambahkan gambar dan deskripsi produk lainnya sesuai kebutuhan -->
+    </div>
+
+</body>
+</html>
