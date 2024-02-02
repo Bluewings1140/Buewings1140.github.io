@@ -11,13 +11,13 @@
         }
 
         .header-img {
-            width: 100%; /* Lebar 100% agar gambar mengisi seluruh lebar layar */
-            height: auto; /* Menjaga rasio aspek gambar */
+            width: 100%;
+            height: auto;
         }
 
         .gallery {
             display: flex;
-            flex-direction: row; /* Susun gambar secara horizontal */
+            flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -36,30 +36,45 @@
         .gallery figcaption {
             margin-top: 5px;
         }
+
+        .buy-button {
+            display: block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
 
-    <img class="header-img" src="gambar_besar.jpg" alt="Gambar Besar"> <!-- Ganti dengan URL atau path file gambar besar -->
+    <img class="header-img" src="gambar_besar.jpg" alt="Gambar Besar">
 
     <div class="gallery">
         <figure>
             <img src="gambar_produk1.jpg" alt="Produk 1">
             <figcaption>Deskripsi Produk 1</figcaption>
+            <a href="https://wa.me/1234567890" target="_blank" class="buy-button">Beli di sini</a>
         </figure>
         <figure>
             <img src="gambar_produk2.jpg" alt="Produk 2">
             <figcaption>Deskripsi Produk 2</figcaption>
+            <a href="https://wa.me/1234567891" target="_blank" class="buy-button">Beli di sini</a>
         </figure>
         <figure>
             <img src="gambar_produk3.jpg" alt="Produk 3">
             <figcaption>Deskripsi Produk 3</figcaption>
+            <a href="https://wa.me/1234567892" target="_blank" class="buy-button">Beli di sini</a>
         </figure>
         <figure>
             <img src="gambar_produk4.jpg" alt="Produk 4">
             <figcaption>Deskripsi Produk 4</figcaption>
+            <a href="https://wa.me/1234567893" target="_blank" class="buy-button">Beli di sini</a>
         </figure>
-        <!-- Tambahkan gambar dan deskripsi produk lainnya sesuai kebutuhan -->
+        <!-- Add more figures for additional products with respective image source and descriptions -->
     </div>
 
 </body>
